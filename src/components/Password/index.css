@@ -5,36 +5,75 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 10%;
+  padding: 15px;
 }
+
+@media screen and (min-width: 576px) {
+  .app-container {
+    padding: 30px 10%;
+  }
+}
+
 .app-logo {
-  width: 150px;
+  width: 100px;
   align-self: flex-start;
 }
+
+@media screen and (min-width: 576px) {
+  .app-logo {
+    width: 150px;
+  }
+}
+
 .password-app-container {
   background-color: #5763a5;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   border-radius: 10px;
-  padding: 30px;
+  padding: 10px;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 10px;
 }
+
+@media screen and (min-width: 576px) {
+  .password-app-container {
+    flex-direction: row;
+    padding: 30px;
+    margin-top: 20px;
+  }
+}
+
 .password-container {
   background-color: #454f84;
   border-radius: 10px;
-  padding: 0px 40px;
-  width: 45%;
+  padding: 15px 20px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  order: 1;
 }
+
+@media screen and (min-width: 576px) {
+  .password-container {
+    width: 45%;
+    padding: 0px 40px;
+    order: 0;
+  }
+}
+
 .main-heading {
   font-family: 'Roboto';
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 500;
   color: #f8fafc;
+}
+
+@media screen and (min-width: 576px) {
+  .main-heading {
+    font-size: 24px;
+  }
 }
 
 .form-container {
@@ -75,12 +114,6 @@
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
-.password-image-container {
-  width: 40%;
-}
-.password-image {
-  width: 90%;
-}
 
 .input-button-container {
   align-self: flex-end;
@@ -95,14 +128,44 @@
   padding: 10px 30px;
   border-radius: 10px;
 }
+
+.password-image-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 576px) {
+  .password-image-container {
+    width: 40%;
+  }
+}
+.password-image {
+  width: 60%;
+}
+@media screen and (min-width: 576px) {
+  .password-image {
+    width: 100%;
+  }
+}
+
 .display-password-container {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   background-color: #5763a5;
-  margin-top: 20px;
+  margin-top: 8px;
   width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+  .display-password-container {
+    padding: 20px;
+    margin-top: 20px;
+  }
 }
 
 .password-count-search-container {
@@ -116,51 +179,110 @@
   flex-direction: row;
   align-items: center;
 }
+
+@media screen and (min-width: 576px) {
+  .password-count-search-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .password-count-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
 .password-count-heading {
   font-family: 'Roboto';
   color: #f8fafc;
-  font-size: 24px;
-  font-weight: 500;
-  margin-right: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 5px;
+}
+
+@media screen and (min-width: 576px) {
+  .password-count-heading {
+    font-size: 24px;
+    font-weight: 500;
+    margin-right: 15px;
+  }
 }
 .password-count {
-  padding: 0px 15px;
+  padding: 0px 8px;
   border: 1px solid #b6c3ca;
   border-radius: 15px;
   color: #f8fafc;
-  font-size: 12px;
-  font-weight: 700;
+  font-size: 10px;
+  font-weight: 400;
 }
+
+@media screen and (min-width: 576px) {
+  .password-count {
+    padding: 0px 15px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+}
+
 .search-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   background-color: #f8fafc;
-  height: 40px;
+  height: 20px;
   border-radius: 5px;
 }
 .search-icon-container {
-  height: 40px;
+  height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.search-icon {
-  width: 24px;
-  height: 24px;
-  margin: 0px 20px;
+
+@media screen and (min-width: 576px) {
+  .search-container {
+    height: 40px;
+  }
+
+  .search-icon-container {
+    height: 40px;
+  }
 }
+
+.search-icon {
+  width: 14px;
+  height: 14px;
+  margin: 0px 5px;
+}
+
+@media screen and (min-width: 576px) {
+  .search-icon {
+    width: 24px;
+    height: 24px;
+    margin: 0px 20px;
+  }
+}
+
 .input-search {
-  padding-left: 10px;
+  padding-left: 5px;
   border-radius: 4px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
-  height: 40px;
-  width: 200px;
+  height: 20px;
+  width: 120px;
   border: 0px;
   outline: 0px;
   font-size: 14px;
   border-left: 1px solid #b6c3ca;
+}
+
+@media screen and (min-width: 576px) {
+  .input-search {
+    padding-left: 10px;
+    height: 40px;
+    width: 200px;
+  }
 }
 .hr-line {
   border: 1px solid #7683cb;
@@ -172,26 +294,57 @@
   justify-content: flex-end;
   align-items: center;
 }
+
 .show-password-checkbox {
-  width: 18px;
-  height: 18px;
+  width: 14px;
+  height: 14px;
   cursor: pointer;
 }
+
+@media screen and (min-width: 576px) {
+  .show-password-checkbox {
+    width: 18px;
+    height: 18px;
+  }
+}
+
 .show-password-name {
-  font-size: 18px;
+  font-size: 14px;
   font-family: 'Roboto';
   color: #f8fafc;
-  margin-left: 5px;
+  margin-left: 3px;
 }
+
+@media screen and (min-width: 576px) {
+  .show-password-name {
+    font-size: 18px;
+    margin-left: 5px;
+  }
+}
+
 .display-container {
-  min-height: 250px;
+  min-height: 150px;
 }
+
+@media screen and (min-width: 576px) {
+  .display-container {
+    min-height: 250px;
+  }
+}
+
 .display-password-list-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   padding: 0px;
+}
+
+@media screen and (min-width: 576px) {
+  .display-password-list-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
 }
 
 .length-zero-password-container {
@@ -201,10 +354,23 @@
   align-items: center;
 }
 .length-password-image {
-  width: 35%;
+  width: 70%;
 }
+
+@media screen and (min-width: 576px) {
+  .length-password-image {
+    width: 35px;
+  }
+}
+
 .length-password-name {
-  font-size: 24px;
+  font-size: 14px;
   font-family: 'Roboto';
   color: #f8fafc;
+}
+
+@media screen and (min-width: 576px) {
+  .length-password-name {
+    font-size: 24px;
+  }
 }
